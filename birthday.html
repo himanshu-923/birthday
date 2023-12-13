@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <title>Wish me on my birthday</title>
+    <link rel="stylesheet" href="birthday.css">
+</head>
+<body>
+    <h1>Today is my birthday</h1>
+    <h2>Wanna wish me</h2>
+    <form id="wishing-form" method="post">
+        <label for="name">Enter your name</label><br>
+        <input type="text" id="name" required placeholder="Enter your name here"><br>
+        <label for="wish">Write wishes</label><br>
+        <textarea id="wish" cols="30" rows="10" placeholder="Write your wishes here 😊"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+
+<!-- Add this modal element in your HTML body -->
+<div id="confirmationModal" class="modal">
+    <div class="modal-content">
+      <div id="modalContent">
+        <p>Thank you very much for your wish! <br> Do you want to make my birthday more special?</p>
+      </div>
+      <div id="modalButtons">
+        <button id="modalYesButton">Yes</button>
+        <button id="modalNoButton" onclick="closeModal()">No</button>
+      </div>
+    </div>
+  </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
