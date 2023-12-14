@@ -50,8 +50,11 @@ document.getElementById('modalYesButton').addEventListener('click', function() {
 
     // Handle "No" button click
     document.getElementById('modalNoButton').addEventListener('click', function() {
-      // Display a "Thanks and Goodbye" message
-      document.getElementById('modalContent').innerHTML = '<p>Thanks and Goodbye!</p>';
+      // Display a picture with adjusted size
+      const imagePath = 'qr2.jpg';
+      const imageSizeStyle = 'max-width: 60%; max-height: 60%;'; // Adjust the size as needed
+      
+      document.getElementById('modalContent').innerHTML = `<img src="${imagePath}" alt="Special Picture" style="${imageSizeStyle}">`;
       
       // Remove the buttons
       document.getElementById('modalButtons').style.display = 'none';
