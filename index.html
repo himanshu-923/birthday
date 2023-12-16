@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
-    <title>Wish me on my birthday</title>
-    <link rel="stylesheet" href="birthday.css">
-</head>
-<body>
-    <h1>Hello! my name is Himanshu <br> Today is my birthday</h1>
-    <h2>Wanna wish me</h2>
-    <form id="wishing-form" method="post">
-        <label for="name">Enter your name</label><br>
-        <input type="text" id="name" required placeholder="Enter your name here"><br>
-        <label for="wish">Write wishes</label><br>
-        <textarea id="wish" cols="30" rows="10" placeholder="Write your wishes here 😊"></textarea><br>
-        <button type="submit">Submit</button>
-    </form>
 
-<!-- Add this modal element in your HTML body -->
-<div id="confirmationModal" class="modal">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <title>Wish me on my birthday</title>
+  <link rel="stylesheet" href="birthday.css">
+</head>
+
+<body>
+  <h1>Hello! my name is Himanshu <br> Today is my birthday</h1>
+  <h2>Wanna wish me</h2>
+  <form id="wishing-form" method="post">
+    <label for="name">Enter your name</label><br>
+    <input type="text" id="name" required placeholder="Enter your name here"><br>
+    <label for="wish">Write wishes</label><br>
+    <textarea id="wish" cols="30" rows="10" placeholder="Write your wishes here 😊"></textarea><br>
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Add this modal element in your HTML body -->
+  <div id="confirmationModal" class="modal">
     <div class="modal-content">
       <div id="modalContent">
         <p>Thank you very much for your wish! <br> Do you want to make my birthday more special?</p>
@@ -31,7 +33,16 @@
       </div>
     </div>
   </div>
-  
-    <script src="script.js"></script>
+  <div class="birthday-quotes">
+    <h3>Birthday Quotes:</h3>
+    <p>"Life is a beautiful melody, and on my birthday, each well-wish is a note that adds harmony to the song of my
+      existence. Thank you for composing the symphony of joy with your heartfelt wishes – together, let's make every
+      moment a celebration!" 🎉🎂</p>
+
+  </div>
+
+
+  <script src="script.js"></script>
 </body>
+
 </html>
